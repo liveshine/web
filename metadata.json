@@ -1,0 +1,6 @@
+{
+  "name": "Plus UI Clone",
+  "description": "A premium blogger template clone featuring modern glassmorphism, responsive masonry layouts, and an integrated AI Assistant powered by Gemini 3.1 Pro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
