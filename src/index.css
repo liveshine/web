@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --color-bg: var(--theme-bg);
+  --color-ink: var(--theme-ink);
+  --color-accent: var(--theme-accent);
+}
+
+:root {
+  --theme-bg: #F8F7F4;
+  --theme-ink: #1A1916;
+  --theme-accent: #C5A059;
+}
+
+.dark {
+  --theme-bg: #1A1916;
+  --theme-ink: #F8F7F4;
+  --theme-accent: #E2B96D;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--theme-bg);
+  color: var(--theme-ink);
+}
+
+::selection {
+  background-color: var(--theme-accent);
+  color: var(--theme-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.prose {
+  --tw-prose-body: var(--theme-ink);
+  --tw-prose-headings: var(--theme-ink);
+  --tw-prose-lead: var(--theme-ink);
+  --tw-prose-links: var(--theme-accent);
+  --tw-prose-bold: var(--theme-ink);
+  --tw-prose-counters: var(--theme-ink);
+  --tw-prose-bullets: var(--theme-ink);
+  --tw-prose-hr: var(--theme-ink);
+  --tw-prose-quotes: var(--theme-ink);
+  --tw-prose-quote-borders: var(--theme-accent);
+  --tw-prose-captions: var(--theme-ink);
+  --tw-prose-code: var(--theme-ink);
+  --tw-prose-pre-code: var(--theme-bg);
+  --tw-prose-pre-bg: var(--theme-ink);
+  --tw-prose-th-borders: var(--theme-ink);
+  --tw-prose-td-borders: var(--theme-ink);
+}
