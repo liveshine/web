@@ -194,7 +194,7 @@ export default function App() {
           style={{ scaleX }}
         />
       )}
-      <div className="max-w-[1200px] mx-auto px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 flex flex-col min-h-screen">
         {!isDistractionFree && (
           <Navbar 
             darkMode={darkMode} 
@@ -207,7 +207,7 @@ export default function App() {
           />
         )}
         
-        <main>
+        <main className="flex-1">
           {selectedPost ? (
             <article className="pb-16 animate-in fade-in duration-500">
               {!isDistractionFree && (
